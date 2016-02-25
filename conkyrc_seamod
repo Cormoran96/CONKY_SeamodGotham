@@ -1,8 +1,8 @@
 #==============================================================================
 #                               conkyrc_seamod
-# Date    : 05/02/2012
-# Author  : SeaJey
-# Version : v0.1
+# Date    : 25/02/2016
+# Author  : Lucas Dousse
+# Version : v0.2
 # License : Distributed under the terms of GNU GPL version 2 or later
 # 
 # This version is a modification of conkyrc_lunatico wich is modification of conkyrc_orange
@@ -64,7 +64,7 @@ color4 EF5A29
 color5 77B753
 
 # Loading lua script for drawning rings
-lua_load .conky/ConkySeamod/seamod_rings.lua
+lua_load ./CONKY_SeamodGotham/conky/ConkySeamod/seamod_rings.lua
 lua_draw_hook_post main
 
 ## System information using conky capabilities
