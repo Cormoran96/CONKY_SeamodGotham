@@ -1,9 +1,9 @@
 --==============================================================================
 --                            seamod_rings.lua
 --
---  Date    : 05/02/2012
---  Author  : SeaJey
---  Version : v0.1
+--  Date    : 25/02/2016
+--  Author  : Lucas Dousse
+--  Version : v0.2
 --  License : Distributed under the terms of GNU GPL version 2 or later
 --
 --  This version is a modification of lunatico_rings.lua wich is modification of conky_orange.lua 
