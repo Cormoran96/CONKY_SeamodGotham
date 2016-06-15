@@ -116,7 +116,7 @@ ${offset 15}${upspeedgraph eth0 40,285 4B1B0C FF5C2B 100 -l}
 ${offset 15}${color1}${font Ubuntu:size=9,weight:bold}Down: ${alignr}${font Ubuntu:size=9,weight:normal}$color2${downspeed wlan0} / ${totaldown}
 ${offset 15}${downspeedgraph eth0 40,285 324D23 77B753 100 -}
 ${if_existing /proc/net/route wlan0} ${font Ubuntu:size=10,weight:bold}${color1}Wireless
-${color4}${font sans-serif:normal:size=8}IP Public: $alignr ${execi 3600 curl ip.dousse.eu/ip.php}
+${color4}${font sans-serif:normal:size=8}IP Public: $alignr ${execi 3600 curl ip.dousse.eu/ip.php | grep -E '\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}\b' }
 ${color1}${font sans-serif:normal:size=8}IP Privee: $alignr ${addr wlan0}
 ${color2}SSID: $alignr ${wireless_essid wlan0}
 ${color3}Speed: $alignr ${wireless_bitrate wlan0}
