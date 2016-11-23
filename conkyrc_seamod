@@ -115,11 +115,11 @@ ${offset 15}${color1}${font Ubuntu:bold:size=9}Up: ${alignr}${font Ubuntu:normal
 ${offset 15}${upspeedgraph wlp3s0 40,285 4B1B0C FF5C2B 100 -l}
 ${offset 15}${color1}${font Ubuntu:bold:size=9}Down: ${alignr}${font Ubuntu:normal:size=9}$color2${downspeed wlp3s0} / ${totaldown}
 ${offset 15}${downspeedgraph wlp3s0 40,285 324D23 77B753 100 -}
-${if_existing /proc/net/route eno1} ${font Ubuntu:bold:size=9}${color1}Eth0
+${if_existing /proc/net/route eno1} ${font Ubuntu:bold:size=9}${color1}${alignc}Eth0
 ${color4}${font sans-serif:normal:size=8}IP Public: $alignr ${execi 3600 curl ip.dousse.eu/ip.php}
 ${color1}${font sans-serif:normal:size=8}IP Privee: $alignr ${addr eno1}
 ${endif}
-${if_existing /proc/net/route wlp3s0} ${font Ubuntu:bold:size=9}${color1}Wireless
+${if_existing /proc/net/route wlp3s0} ${font Ubuntu:bold:size=9}${color1}${alignc}Wlan0
 ${color4}${font sans-serif:normal:size=8}IP Public: $alignr ${execi 3600 curl ip.dousse.eu/ip.php}
 ${color1}${font sans-serif:normal:size=8}IP Privee: $alignr ${addr wlp3s0}
 ${color2}SSID: $alignr ${wireless_essid wlp3s0}
