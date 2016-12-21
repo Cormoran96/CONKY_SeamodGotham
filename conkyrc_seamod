@@ -75,7 +75,7 @@ own_window_colour 000000
 TEXT
 ${font Ubuntu:bold:size=10}${color4}SYSTEM ${hr 2}
 ${offset 15}${font Ubuntu:normal:size=10}${color1}$sysname $kernel
-${offset 15}${font Ubuntu:normal:size=10}${color1}${exec whoami}@${nodename}
+${offset 15}${font Ubuntu:normal:size=10}${color1}${exec lsb_release -ds}${alignr}${exec whoami}@${nodename}
 ${offset 15}${font Ubuntu:normal:size=10}${color1}Uptime: $uptime
 
 # Showing CPU Graph
